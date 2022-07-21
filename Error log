@@ -1,0 +1,34 @@
+Exception in RimWorld.FloatMenuMakerMap.ChoicesAtFor: System.InvalidOperationException: Sequence contains no matching element
+  at System.Linq.Enumerable.First[TSource] (System.Collections.Generic.IEnumerable`1[T] source, System.Func`2[T,TResult] predicate) [0x00011] in <351e49e2a5bf4fd6beabb458ce2255f3>:0 
+  at VanillaMemesExpanded.RitualBehaviorWorker_WickerManBurning.CanStartRitualNow (Verse.TargetInfo target, RimWorld.Precept_Ritual ritual, Verse.Pawn selectedPawn, System.Collections.Generic.Dictionary`2[TKey,TValue] forcedForRole) [0x0000c] in <abccccb065c74bbcbc6a2380cc7820bc>:0 
+  at Verse.Thing+<GetFloatMenuOptions>d__147.MoveNext () [0x0015e] in <81af9f8a18324e17b286924a43555a7c>:0 
+  at Verse.ThingWithComps+<GetFloatMenuOptions>d__40.MoveNext () [0x00078] in <81af9f8a18324e17b286924a43555a7c>:0 
+  at RimWorld.FloatMenuMakerMap.AddHumanlikeOrders (UnityEngine.Vector3 clickPos, Verse.Pawn pawn, System.Collections.Generic.List`1[T] opts) [0x04679] in <81af9f8a18324e17b286924a43555a7c>:0 
+     - transpiler com.pawnmorpher.mod: IEnumerable`1 Pawnmorph.FloatMenuMakerMapPatches+AddHumanlikeOrders:Transpiler(IEnumerable`1 instructions)
+     - transpiler LWM.DeepStorage: IEnumerable`1 LWM.DeepStorage.Patch_AddHumanlikeOrders:Transpiler(IEnumerable`1 instructions)
+     - transpiler PerformanceOptimizer.Main: IEnumerable`1 PerformanceOptimizer.Optimization_FasterGetCompReplacement:Transpiler(IEnumerable`1 instructions, MethodBase method)
+     - prefix LWM.DeepStorage: Boolean LWM.DeepStorage.Patch_AddHumanlikeOrders:Prefix(Vector3 clickPos, Pawn pawn, List`1 opts)
+     - prefix com.pawnmorpher.mod: Boolean Pawnmorph.FloatMenuMakerMapPatches+AddHumanlikeOrdersPatch:Prefix_AddHumanlikeOrders(Vector3 clickPos, Pawn pawn, List`1 opts)
+     - prefix rimworld.rwmods.androidtiers: Boolean MOARANDROIDS.FloatMenuMakerMap_Patch+AddHumanlikeOrders_Patch:ListenerPrefix(Vector3 clickPos, Pawn pawn, List`1 opts)
+     - postfix OskarPotocki.VFECore: Void VFECore.Patch_FloatMenuMakerMap+AddHumanlikeOrders_Fix:Postfix(Vector3 clickPos, Pawn pawn, List`1& opts)
+     - postfix PeteTimesSix.SimpleSidearms: Void PeteTimesSix.SimpleSidearms.Intercepts.FloatMenuMakerMap_AddHumanLikeOrders_Postfix:AddHumanlikeOrders(Vector3 clickPos, Pawn pawn, List`1 opts)
+     - postfix legodude17.mvcf: Void MVCF.Harmony.Brawlers:AddHumanlikeOrders_Postfix(List`1 opts, Vector3 clickPos, Pawn pawn)
+     - postfix OskarPotocki.HeavyWeapons: Void HeavyWeapons.Patch_FloatMenuMakerMap+AddHumanlikeOrders_Fix:Postfix(Vector3 clickPos, Pawn pawn, List`1& opts)
+     - postfix llunak.MorePrecepts: Void MorePrecepts.FloatMenuMakerMap_Patch:AddHumanlikeOrders(Vector3 clickPos, Pawn pawn, List`1 opts)
+     - postfix rimworld.AmCh.needBarOverflow: Void Need_Bar_Overflow.Patch_FloatMenuMakerMap_AddHumanlikeOrders:Postfix(Vector3 clickPos, Pawn pawn, List`1 opts)
+     - postfix com.alphamemes: Void AlphaMemes.AlphaMemes_FloatMenuMakerMap_AddHumanlikeOrders_Patch:AddDragRelicToAltar(Vector3 clickPos, Pawn pawn, List`1& opts)
+     - postfix ChickenPlucker.CapturedPersonsPatches: Void CapturedPersons.AddHumanlikeOrdersPatch:Postfix(Vector3 clickPos, Pawn pawn, List`1& opts)
+     - postfix eagle0600.dressPatients: Void DressPatient.Order_DressPatientOrCorpse:DressPatientFloatMenuOption(Vector3 clickPos, Pawn pawn, List`1 opts)
+     - postfix com.TradingControl.patches: Void TradingControl.Harmonize.HarmonyPatches:Dismisstraders(Vector3& clickPos, Pawn& pawn, List`1& opts)
+     - postfix rimworld.rwmods.androidtiers: Void MOARANDROIDS.FloatMenuMakerMap_Patch+AddHumanlikeOrders_Patch:ListenerPostfix(Vector3 clickPos, Pawn pawn, List`1 opts)
+     - postfix kentington.saveourship2: Void SaveOurShip2.EggFix:FillThatNest(Vector3 clickPos, Pawn pawn, List`1& opts)
+     - postfix Linkolas.Stabilize: Void Stabilize.Patches+FloatMenuMakerCarryAdder:AddHumanlikeOrdersPostfix(Vector3 clickPos, Pawn pawn, List`1 opts)
+     - postfix com.calltradeships.rimworld.mod: Void CallTradeShips.Patch_FloatMenuMakerMap_AddHumanlikeOrders:Postfix(Vector3 clickPos, Pawn pawn, List`1 opts)
+     - postfix LWM.DeepStorage: Void LWM.DeepStorage.Patch_AddHumanlikeOrders:Postfix(List`1 opts)
+  at RimWorld.FloatMenuMakerMap.ChoicesAtFor (UnityEngine.Vector3 clickPos, Verse.Pawn pawn, System.Boolean suppressAutoTakeableGoto) [0x00105] in <81af9f8a18324e17b286924a43555a7c>:0 
+     - transpiler com.pawnmorpher.mod: IEnumerable`1 Pawnmorph.FloatMenuMakerMapPatches+AddHumanlikeOrdersToSA:Transpiler(IEnumerable`1 instructions)
+     - prefix com.spdskatr.projectrimfactory: Boolean ProjectRimFactory.Common.HarmonyPatches.Patch_FloatMenuMakerMap_ChoicesAtFor:Prefix(Vector3 clickPos, Pawn pawn, List`1& __result)
+     - postfix OskarPotocki.VFECore: Void VFE.Mechanoids.HarmonyPatches.FloatMenuMakerMap_ChoicesAtFor_Patch:Postfix(List`1& __result, Vector3 clickPos, Pawn pawn, Boolean suppressAutoTakeableGoto)
+     - postfix net.pardeike.rimworld.mods.achtung: Void AchtungMod.FloatMenuMakerMap_ChoicesAtFor_Postfix:Postfix(List`1 __result, Vector3 clickPos, Pawn pawn)
+     - postfix BDew.Restraints: Void Restraints.FloatMenuMakerMapPatch:Postfix(List`1 __result, Vector3 clickPos, Pawn pawn)
+     - finalizer net.pardeike.rimworld.mods.achtung: Exception AchtungMod.FloatMenuMakerMap_ChoicesAtFor_Finalizer:Finalizer(Exception __exception, List`1& __result)
