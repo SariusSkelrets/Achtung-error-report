@@ -1,0 +1,19 @@
+[[RimHUD Auto-deactivation report]]
+(This error appears to have been triggered by Vanilla Psycasts Expanded [vanillaexpanded.vpsycastse])
+
+Object reference not set to an instance of an object
+
+Stacktrace:
+[VanillaPsycastsExpanded: Object reference not set to an instance of an object]
+  at VanillaPsycastsExpanded.MeditationFocusTypeAvailabilityCache_PawnCanUse_Patch.Postfix (Verse.Pawn p, RimWorld.MeditationFocusDef type, System.Boolean& __result) [0x00028] in <6a8df80dabff40cab3d9ee49304b6f8f>:0 
+  at (wrapper dynamic-method) RimWorld.MeditationFocusTypeAvailabilityCache.RimWorld.MeditationFocusTypeAvailabilityCache.PawnCanUseInt_Patch1(Verse.Pawn,RimWorld.MeditationFocusDef)
+  at RimWorld.MeditationFocusTypeAvailabilityCache.PawnCanUse (Verse.Pawn p, RimWorld.MeditationFocusDef type) [0x0003b] in <81af9f8a18324e17b286924a43555a7c>:0 
+  at RimWorld.MeditationFocusDef.CanPawnUse (Verse.Pawn p) [0x00000] in <81af9f8a18324e17b286924a43555a7c>:0 
+  at RimWorld.MeditationUtility+<FocusTypesAvailableForPawn>d__14.MoveNext () [0x00031] in <81af9f8a18324e17b286924a43555a7c>:0 
+  at System.Linq.Enumerable+SelectEnumerableIterator`2[TSource,TResult].MoveNext () [0x00029] in <351e49e2a5bf4fd6beabb458ce2255f3>:0 
+  at Verse.GenText.ToCommaListInner (System.Collections.Generic.IEnumerable`1[T] items, System.String& first, System.String& last, System.Int32& count) [0x000a8] in <81af9f8a18324e17b286924a43555a7c>:0 
+  at Verse.GenText.ToCommaList (System.Collections.Generic.IEnumerable`1[T] items, System.Boolean useAnd, System.Boolean emptyIfNone) [0x00009] in <81af9f8a18324e17b286924a43555a7c>:0 
+  at RimWorld.MeditationUtility.FocusTypesAvailableForPawnString (Verse.Pawn pawn) [0x0002a] in <81af9f8a18324e17b286924a43555a7c>:0 
+  at RimHUD.Data.Models.PawnModel.GetBioTooltip () [0x0030c] in <919bffbd108140a6ab9ce9b46519700b>:0 
+  at RimHUD.Interface.GUIPlus.DrawTooltip (UnityEngine.Rect rect, System.Func`1[TResult] tooltip, System.Boolean highlight, System.Int32 uniqueId) [0x00012] in <919bffbd108140a6ab9ce9b46519700b>:0 
+  at RimHUD.Interface.InspectPanePlus.OnGUI (UnityEngine.Rect inRect, RimWorld.IInspectPane pane) [0x0015f] in <919bffbd108140a6ab9ce9b46519700b>:0 
