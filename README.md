@@ -1,2 +1,2 @@
-# Achtung-error-report
-Repository to hold one (and currently only one) rimworld error report
+# Error and modlist sharing
+Personnal repository to hold error logs and modlist I wish to share
